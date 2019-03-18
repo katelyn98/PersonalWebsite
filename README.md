@@ -1,4 +1,4 @@
-# Katelyn's Website
+# steelhacker
 
 ## Project setup
 ```
