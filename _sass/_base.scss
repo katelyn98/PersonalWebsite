@@ -5,7 +5,7 @@ body {
 }
 
 body {
-    @include serif-font;
+    font-family: 'Raleway';
 }
 
 hr {
@@ -15,7 +15,7 @@ hr {
 }
 
 hr.light {
-    border-color: white;
+    border-color: lightgray;
 }
 
 a {
