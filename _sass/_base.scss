@@ -52,7 +52,7 @@ p {
 }
 
 .text-faded {
-    color: rgba(white, .7);
+    color: rgba(lightgray, .7);
 }
 
 section {
@@ -161,7 +161,7 @@ header {
     .header-content {
         position: relative;
         text-align: center;
-        padding: 100px 15px 100px;
+        margin-top: -130px;
         width: 100%;
         .header-content-inner {
             h1 {
