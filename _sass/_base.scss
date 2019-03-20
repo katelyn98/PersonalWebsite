@@ -176,7 +176,7 @@ header {
             }
             p {
                 font-weight: 300;
-                color: rgba(grey, .7);
+                color: rgba(black, .7);
                 font-size: 16px;
                 margin-bottom: 50px;
             }
@@ -191,6 +191,7 @@ header {
             -ms-transform: translateY(-50%);
             transform: translateY(-50%);
             padding: 0 50px;
+            color:rgb(1, 53, 1);
             .header-content-inner {
                 max-width: 1000px;
                 margin-left: auto;
@@ -198,6 +199,7 @@ header {
                 p {
                     font-size: 18px;
                     max-width: 80%;
+                    color: rgba(black, .7);
                     margin-left: auto;
                     margin-right: auto;
                 }
@@ -229,7 +231,7 @@ header {
     max-width: 650px;
     margin: 0 auto;
     .portfolio-box-caption {
-        color: white;
+        color: rgb(1, 53, 1);
         opacity: 0;
         display: block;
         background: rgba( $theme-primary, .9 );
