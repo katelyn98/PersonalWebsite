@@ -161,7 +161,6 @@ header {
     .header-content {
         position: relative;
         text-align: center;
-        margin-top: -130px;
         padding: 100px, 15px, 100px;
         width: 100%;
         .header-content-inner {
@@ -304,7 +303,7 @@ header {
 }
 
 .btn-primary {
-    @include button-variant(grey, $theme-primary, $theme-primary);
+    @include button-variant(white, $theme-primary, $theme-primary);
 }
 
 .btn {
