@@ -26,7 +26,7 @@ body {
 }
 
 #app {
-  font-family: 'Raleway';
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
