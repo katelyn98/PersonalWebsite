@@ -153,11 +153,19 @@ header {
     position: relative;
     width: 100%;
     min-height: auto;
-    @include background-cover;
+    //@include background-cover;
     background-position: center;
     text-align: center;
     color: white;
+    #backgroundvideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
     .header-content {
+        top: 0;
         position: relative;
         text-align: center;
         width: 100%;
@@ -182,13 +190,6 @@ header {
                 margin-bottom: 50px;
             }
         }
-    }
-    #backgroundvideo {
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        min-width: 100%;
-        min-height: 100%;
     }
     @media (min-width: 768px) {
         min-height: 100%;
