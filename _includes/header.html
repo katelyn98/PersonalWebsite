@@ -5,6 +5,21 @@
             <hr>
             <!-- <p>Learn all about Katelyn! You will find her talents, her passions, and her beliefs all throughout. Also check out her resume for a more detailed summary of her achievements and experiences.</p> -->
             <!-- <a href="#about" class="btn btn-primary btn-xl page-scroll">Find out more!</a> -->
+            <script>
+                const Octokit = require('@octokit/rest')
+
+                const octokit = Octokit({
+
+                    auth: '013ed923965c1f44bdce2db169f6852cf068f562',
+                    userAgent: 'myWebsite v1.0.0',
+                    baseUrl: 'https://api.github.com'
+
+                })
+
+                octokit.activity.listPublicEventsForUser({
+                    katelyn98
+                })
+            </script>
         </div>
     </div>
     <!-- <div style = "position: relative" class="video">
