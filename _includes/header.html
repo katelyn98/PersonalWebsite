@@ -5,23 +5,17 @@
             <hr>
             <!-- <p>Learn all about Katelyn! You will find her talents, her passions, and her beliefs all throughout. Also check out her resume for a more detailed summary of her achievements and experiences.</p> -->
             <!-- <a href="#about" class="btn btn-primary btn-xl page-scroll">Find out more!</a> -->
-            <script>
-                const Octokit = require('@octokit/rest')
-
-                const octokit = Octokit({
-
-                    auth: '013ed923965c1f44bdce2db169f6852cf068f562',
-                    userAgent: 'myWebsite v1.0.0',
-                    baseUrl: 'https://api.github.com'
-
-                })
-
-                octokit.activity.listPublicEventsForUser({
-                    katelyn98
-                })
-            </script>
         </div>
     </div>
+
+
+    <div class="header-content-git">
+        <h1>"Git API"</h1>
+    </div>
+
+
+    <script>document.getElementsByClassName("header-content-git").innerHTML</script>
+
     <!-- <div style = "position: relative" class="video">
         <video id="backgroundvideo" width=100% loop="loop" muted="" autoplay="autoplay" playsinline="playsinline">
             <source src="https://video.wixstatic.com/video/11062b_382eeb350464462c8f9150e4d3e40f2b/480p/mp4/file.mp4" type="video/mp4">
