@@ -1,24 +1,43 @@
 <header>
     <div class="header-content">
-        <div class="header-content-inner">
-            <h1 id="quote">"Create the things you wish existed"</h1>
+        <div class="row">
+            <!-- <div class="slideshow-container">
+                <div class="mySlides">
+                    <q>Create the things you wish existed</q>
+                    <p class="author">- Anonymous</p>
+                </div>
+                <div class="mySlides">
+                    <q>Here's to the crazy ones...</q>
+                    <p class="author">- Steve Jobs</p>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div> -->
+            <div class="profile">
+                <img src="img/portfolio/MillenniumFellowshipProfilePic.jpg" width=200 height=200>
+            </div>
+            <div class="info" style="background-color:lightgrey">
+                <h3>About me!</h3>
+            </div>
             <hr>
-            <!-- <p>Learn all about Katelyn! You will find her talents, her passions, and her beliefs all throughout. Also check out her resume for a more detailed summary of her achievements and experiences.</p> -->
-            <!-- <a href="#about" class="btn btn-primary btn-xl page-scroll">Find out more!</a> -->
         </div>
         <div class="row">
             <div class="box" style="background-color: rgb(204, 229, 255)">
                 <h3 id="title">Experiences</h3>
                 <hr>
-                <p id="info-left">
-    
-                </p>
+                
             </div>
             <div class="box" style="background-color: rgb(179, 215, 255)">
                 <h3 id="title">Achievements</h3>
                 <hr>
                 <p id="info-right">
-    
+                    
                 </p>
             </div>
             <div class="box" style="background-color: rgb(204,229,255)">
@@ -31,16 +50,33 @@
         </div>
     </div>
 
+    <!-- <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
 
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
 
-    <script>document.getElementsByClassName("header-content-git").innerHTML</script>
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
 
-    <!-- <div style = "position: relative" class="video">
-        <video id="backgroundvideo" width=100% loop="loop" muted="" autoplay="autoplay" playsinline="playsinline">
-            <source src="https://video.wixstatic.com/video/11062b_382eeb350464462c8f9150e4d3e40f2b/480p/mp4/file.mp4" type="video/mp4">
-        </video>
-    </div> -->
-    <!-- <div class="backgroundHeader">
-        <img src="../img/Light-Malibu.jpg">
-    </div> -->
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+    </script> -->
+
 </header>
