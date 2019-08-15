@@ -42,7 +42,6 @@ h6 {
 
 p {
     font-size: 14px;
-    text-align: center;
 }
 
 
@@ -179,21 +178,6 @@ header {
         //     padding: 10px;
         // }
 
-        .name{
-            font-weight: bold;
-            text-align: center;
-            font-size: 24px;
-            flex-direction: row;
-            margin: none;
-        }
-
-        .university {
-            font-style: italic;
-            font-size: 16px;
-            flex-direction: row;
-            font-family: cambria;
-        }
-
         .info {
             flex: 50%;
             background-color:  rgb(179, 215, 255);
@@ -265,6 +249,18 @@ header {
 
         .row{
             padding-top: 25px;
+            display: flex;
+        }
+
+        .name{
+            font-weight: bold;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .university {
+            font-style: italic;
+            font-size: 16px;
             display: inline-flex;
         }
 
