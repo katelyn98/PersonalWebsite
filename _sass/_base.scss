@@ -58,7 +58,7 @@ p {
 }
 
 section {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 aside {
@@ -69,85 +69,85 @@ aside {
     padding: 0;
 }
 
-// Navigation
+// // Navigation
 
-.navbar-default {
-    background-color:rgb(205, 217, 245);
-    border-color: rgba($theme-dark, .5);
-    @include sans-serif-font;
-    @include transition-all;
-    .navbar-header .navbar-brand {
-        color: $theme-primary;
-        @include sans-serif-font;
-        font-weight: 700;
-        text-transform: uppercase;
-        &:hover,
-        &:focus {
-            color: darken($theme-primary, 10%);
-        }
-    }
-    .nav {
-        > li {
-            > a,
-            > a:focus {
-                text-transform: uppercase;
-                font-weight: 700;
-                font-size: 13px;
-                color: $theme-dark;
-                &:hover {
-                    color: $theme-primary;
-                }
-            }
-            &.active {
-                > a,
-                > a:focus {
-                    color: $theme-primary !important;
-                    background-color: transparent;
-                    &:hover {
-                        background-color: transparent;
-                    }
-                }
-            }
-        }
-    }
-    @media (min-width: 768px) {
-        background-color: rgba(rgb(205, 217, 245), .5);
-        border-color: rgba(white, .3);
-        .navbar-header .navbar-brand {
-            color: rgba( $theme-primary, .9 );
-            &:hover,
-            &:focus {
-                color: white;
-            }
-        }
-        .nav > li > a,
-        .nav > li > a:focus {
-            color: rgba($theme-primary, .7);
-            &:hover {
-                color: rgba($theme-dark, .5);
-            }
-        }
-        &.affix {
-            background-color: white;
-            border-color: rgba($theme-dark, .5);
-            .navbar-header .navbar-brand {
-                color: $theme-primary;
-                font-size: 14px;
-                &:hover,
-                &:focus {
-                    color: darken($theme-primary, 10%);
-                }
-            }
-            .nav > li > a,
-            .nav > li > a:focus {
-                color: $theme-dark;
-                &:hover {
-                    color: $theme-primary;
-                }
-            }
-        }
-    }
-}
+// .navbar-default {
+//     background-color:rgb(205, 217, 245);
+//     border-color: rgba($theme-dark, .5);
+//     @include sans-serif-font;
+//     @include transition-all;
+//     .navbar-header .navbar-brand {
+//         color: $theme-primary;
+//         @include sans-serif-font;
+//         font-weight: 700;
+//         text-transform: uppercase;
+//         &:hover,
+//         &:focus {
+//             color: darken($theme-primary, 10%);
+//         }
+//     }
+//     .nav {
+//         > li {
+//             > a,
+//             > a:focus {
+//                 text-transform: uppercase;
+//                 font-weight: 700;
+//                 font-size: 13px;
+//                 color: $theme-dark;
+//                 &:hover {
+//                     color: $theme-primary;
+//                 }
+//             }
+//             &.active {
+//                 > a,
+//                 > a:focus {
+//                     color: $theme-primary !important;
+//                     background-color: transparent;
+//                     &:hover {
+//                         background-color: transparent;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//     @media (min-width: 768px) {
+//         background-color: rgba(rgb(205, 217, 245), .5);
+//         border-color: rgba(white, .3);
+//         .navbar-header .navbar-brand {
+//             color: rgba( $theme-primary, .9 );
+//             &:hover,
+//             &:focus {
+//                 color: white;
+//             }
+//         }
+//         .nav > li > a,
+//         .nav > li > a:focus {
+//             color: rgba($theme-primary, .7);
+//             &:hover {
+//                 color: rgba($theme-dark, .5);
+//             }
+//         }
+//         &.affix {
+//             background-color: white;
+//             border-color: rgba($theme-dark, .5);
+//             .navbar-header .navbar-brand {
+//                 color: $theme-primary;
+//                 font-size: 14px;
+//                 &:hover,
+//                 &:focus {
+//                     color: darken($theme-primary, 10%);
+//                 }
+//             }
+//             .nav > li > a,
+//             .nav > li > a:focus {
+//                 color: $theme-dark;
+//                 &:hover {
+//                     color: $theme-primary;
+//                 }
+//             }
+//         }
+//     }
+// }
 
 // Homepage Header
 
@@ -165,76 +165,10 @@ header {
         width: 100%;
         padding: 100px 15px 100px;
         top: 50%;
-        
-        // .slideshow-container {
-        //     position: relative;
-        //     background: #cce6ff
-        // }
-
-        // .mySlides {
-        //     display: none;
-        //     padding: 25px;
-        //     text-align: center;
-        // }
-
-        // .prev, .next {
-        //     cursor: pointer;
-        //     position: absolute;
-        //     top: 50%;
-        //     width: auto;
-        //     margin-top: -30px;
-        //     padding: 16px;
-        //     color: #888;
-        //     font-weight: bold;
-        //     font-size: 20px;
-        //     border-radius: 0 3px 3px 0;
-        //     user-select: none;
-        // }
-
-        // .prev {
-        //     position: absolute;
-        //     left: 0;
-        // }
-
-        // .next{
-        //     position: absolute;
-        //     right: 0;
-        //     border-radius: 3px 0 0 3px;
-        // }
-
-        // .prev:hover, .next:hover {
-        //     background-color: rgba(0, 0, 0, 0.8);
-        //     color: white;
-        // }
-
-        // .dot-container {
-        //     text-align: center;
-        //     padding: 5px;
-        //     background: #ddd;
-        // }
-
-        // .dot {
-        //     cursor: pointer;
-        //     height: 11px;
-        //     width: 11px;
-        //     margin: 0 2px;
-        //     background-color: #bbb;
-        //     border-radius: 35%;
-        //     display: inline-block;
-        //     transition: background-color 0.6s ease;
-        // }
-
-        // .active, .dot:hover {
-        //     background-color: #717171;
-        // }
-
-        // q {font-style:italic;}
-
-        // .author {color: cornflowerblue;}
 
         .profile {
             flex: left;
-            padding-right: 20px;
+            margin-top: 150px;
         }
 
         .profile img {
@@ -244,7 +178,53 @@ header {
 
         .info {
             flex: 50%;
+            background-color: rgb(192, 207, 241);
         }
+
+        hr {
+            margin: 15px auto;
+        }
+
+        h4 {
+            font-family: Cambria;
+        }
+
+        .collapsible {
+            background-color: #777;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+          }
+          
+          .active, .collapsible:hover {
+            background-color: #555;
+          }
+          
+          .collapsible:after {
+            content: '\002B';
+            color: white;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+          }
+          
+          .active:after {
+            content: "\2212";
+          }
+          
+          .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+          }
+
         .header-content-inner {
             h1 {
                 font-weight: 500;
@@ -254,7 +234,7 @@ header {
                 color: rgba( $theme-primary, .9 );
             }
             hr {
-                margin: 30px auto;
+                margin: 20px auto;
             }
             
         }
@@ -269,7 +249,7 @@ header {
         }
 
         #title{
-            font-family: monospace;
+            font-family: cambria;
         }
         
     }
@@ -341,6 +321,12 @@ header {
     p {
         margin-bottom: 0;
     }
+}
+
+.title h2 {
+    text-align: center;
+    flex: flex;
+    padding-bottom: 20px;
 }
 
 .portfolio-box {

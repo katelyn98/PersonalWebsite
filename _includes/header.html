@@ -1,31 +1,9 @@
 <header>
     <div class="header-content">
         <div class="row">
-            <!-- <div class="slideshow-container">
-                <div class="mySlides">
-                    <q>Create the things you wish existed</q>
-                    <p class="author">- Anonymous</p>
-                </div>
-                <div class="mySlides">
-                    <q>Here's to the crazy ones...</q>
-                    <p class="author">- Steve Jobs</p>
-                </div>
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-
-            <div class="dot-container">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-            </div> -->
             <div class="profile">
                 <img src="img/portfolio/MillenniumFellowshipProfilePic.jpg" width=200 height=200>
             </div>
-            <div class="info" style="background-color:lightgrey">
-                <h3>About me!</h3>
-            </div>
-            <hr>
         </div>
         <div class="row">
             <div class="box" style="background-color: rgb(204, 229, 255)">
@@ -46,6 +24,42 @@
                 <p id="info-middle">
     
                 </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="info">
+                <h4>Recent Events/Talks Attended</h4>
+                <hr>
+
+                <button class="collapsible">Open Section 1</button>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <button class="collapsible">Open Section 2</button>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <button class="collapsible">Open Section 3</button>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+                <script>
+                    var coll = document.getElementsByClassName("collapsible");
+                    var i;
+
+                    for (i = 0; i < coll.length; i++) {
+                        coll[i].addEventListener("click", function() {
+                            this.classList.toggle("active");
+                            var content = this.nextElementSibling;
+                            if (content.style.maxHeight){
+                                content.style.maxHeight = null;
+                            } else {
+                                content.style.maxHeight = content.scrollHeight + "px";
+                            } 
+                        });
+                    }
+                </script>
             </div>
         </div>
     </div>
