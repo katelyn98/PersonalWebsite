@@ -165,28 +165,33 @@ header {
         width: 100%;
         padding: 100px 15px 100px;
         top: 50%;
-        .header-content-git {
-            position: relative;
-            width: 100%;
-        }
+        
         .header-content-inner {
             h1 {
-                font-weight: 700;
+                font-weight: 500;
                 text-transform: uppercase;
-                margin-top: -180px;
+                margin-top: -50px;
                 margin-bottom: 0;
                 color: rgba( $theme-primary, .9 );
             }
             hr {
                 margin: 30px auto;
             }
-            // p {
-            //     font-weight: 300;
-            //     color: rgba(black, .7);
-            //     font-size: 16px;
-            //     margin-bottom: 50px;
-            // }
+            
         }
+
+        .row{
+            display: flex;
+        }
+
+        .box{
+            flex: 50%;
+        }
+
+        #title{
+            font-family: monospace;
+        }
+        
     }
 
     @media (min-width: 768px) {
