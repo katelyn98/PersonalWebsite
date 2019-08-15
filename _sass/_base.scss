@@ -37,9 +37,8 @@ h6 {
 }
 
 p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
+    font-size: 14px;
+    text-align: center;
 }
 
 
@@ -167,18 +166,33 @@ header {
         top: 50%;
 
         .profile {
-            flex: left;
-            margin-top: 150px;
+            margin-top: 250px;
         }
 
-        .profile img {
-            display: inline-flex;
-            position: left;
+        // .profile img {
+        //     display: inline-flex;
+        //     position: left;
+        //     padding: 10px;
+        // }
+
+        .name{
+            font-weight: bold;
+            text-align: center;
+            font-size: 24px;
+            flex-direction: row;
+            margin: none;
+        }
+
+        .university {
+            font-style: italic;
+            font-size: 16px;
+            flex-direction: row;
+            font-family: cambria;
         }
 
         .info {
             flex: 50%;
-            background-color: rgb(192, 207, 241);
+            background-color:  rgb(179, 215, 255);
         }
 
         hr {
@@ -190,7 +204,7 @@ header {
         }
 
         .collapsible {
-            background-color: #777;
+            background-color: rgb(20, 59, 90);
             color: white;
             cursor: pointer;
             padding: 18px;
@@ -202,7 +216,8 @@ header {
           }
           
           .active, .collapsible:hover {
-            background-color: #555;
+            background-color:  rgb(204, 229, 255);
+            color: rgb(20, 59, 90);
           }
           
           .collapsible:after {
@@ -218,13 +233,18 @@ header {
           }
           
           .content {
-            padding: 0 18px;
+            text-align: left;
+            line-height: 10px;
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.2s ease-out;
             background-color: #f1f1f1;
           }
 
+          .content h5{
+              font-weight: bold;
+              font-family: Cambria;
+          }
         .header-content-inner {
             h1 {
                 font-weight: 500;
@@ -240,12 +260,16 @@ header {
         }
 
         .row{
-            padding-top: 40px;
-            display: flex;
+            padding-top: 25px;
+            display: inline-flex;
         }
 
         .box{
             flex: 50%;
+        }
+
+        .box p{
+            text-align: left;
         }
 
         #title{

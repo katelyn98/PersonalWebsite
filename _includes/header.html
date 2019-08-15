@@ -1,15 +1,21 @@
 <header>
     <div class="header-content">
-        <div class="row">
+        <div class="row" style="background-color: lightgray;">
             <div class="profile">
-                <img src="img/portfolio/MillenniumFellowshipProfilePic.jpg" width=200 height=200>
+                <!-- <img src="img/portfolio/MillenniumFellowshipProfilePic.png" width=100 height=100> -->
+                <p class="name">Katelyn Morrison</p>
+                <p class="university">University of Pittsburgh ~ Class of 2021</p>
             </div>
         </div>
         <div class="row">
-            <div class="box" style="background-color: rgb(204, 229, 255)">
+            <div class="box" style="background-color: rgb(204, 229, 255);">
                 <h3 id="title">Experiences</h3>
                 <hr>
-                
+                <div class="innerbox" style="border: 2px solid; outline-style: solid; outline-color: rgb(20, 59, 90);">
+                        <h4>Software Developer Intern | PPG</h4>
+                        <h5>May 2019 - August 2019</h5>
+                        <p style="padding: 10px;"> • Worked on the Collaboration Team within the Digital Center of Excellence creating a vital form to document and manage the user accessibility to a finance application in ServiceNow using JavaScript and creating automatic provisioning workflows</p>
+                </div>
             </div>
             <div class="box" style="background-color: rgb(179, 215, 255)">
                 <h3 id="title">Achievements</h3>
@@ -31,15 +37,18 @@
                 <h4>Recent Events/Talks Attended</h4>
                 <hr>
 
-                <button class="collapsible">Open Section 1</button>
+                <button class="collapsible">PyOhio 2019 ~ Ohio State University: July 27th - 28th</button>
+                <div class="content">
+                    <h5>Talks attended: </h5>
+                    <p>~ Demystifying Machine Learning: Nikola Novakovic</p>
+                    <p>~ Feature Engineering: An Apprentice’s Guide to the “Dark Art” of Machine Learning: Deborah Diller Harris</p>
+                    <p>~ </p>
+                </div>
+                <button class="collapsible">AI For Good: Local and Global Partnerships For Advancing Responsible AI</button>
                 <div class="content">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
-                <button class="collapsible">Open Section 2</button>
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <button class="collapsible">Open Section 3</button>
+                <button class="collapsible">Bill McKibben Discusses Falter @ University of Washington</button>
                 <div class="content">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
@@ -63,34 +72,5 @@
             </div>
         </div>
     </div>
-
-    <!-- <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}    
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-        }
-    </script> -->
 
 </header>
