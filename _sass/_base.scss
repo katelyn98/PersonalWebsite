@@ -326,7 +326,10 @@ header {
 .title h2 {
     text-align: center;
     flex: flex;
-    padding-bottom: 20px;
+}
+
+.title hr {
+    margin: 15px auto;
 }
 
 .portfolio-box {
