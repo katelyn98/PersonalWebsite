@@ -16,6 +16,8 @@
     <!-- FontAwesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="github-activity.min.js">
     
     <!-- Global CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
@@ -25,7 +27,8 @@
 
     <!-- github acitivity css -->    
     <link rel="stylesheet" href="assets/plugins/github-activity/github-activity.css">
-
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="github-activity.min.css">
     <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
     <link rel="stylesheet" href="assets/plugins/github-activity/github-activity-0.1.5.min.css"> -->
     
@@ -210,11 +213,11 @@
 <!-- 
                         <p>You can also embed your GitHub activities using Casey Scarborough's <a href="https://caseyscarborough.com/projects/github-activity/" target="_blank">GitHub Activity Stream</a> widget.         -->
                         <!--//Usage: https://caseyscarborough.com/projects/github-activity/ -->                       
-                        <div id="feed" class="feed">
+                        <!-- <div id="feed" class="feed">
                             <script>
                                 GitHubActivity.ghfeed({ username: "Katelyn98", selector: "#feed" });
                             </script>
-                        </div><!--//ghfeed-->
+                        </div>//ghfeed -->
                         
                     </div><!--//secton-inner-->
                 </section><!--//section-->
@@ -281,6 +284,14 @@
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </aside><!--//section-->
+
+                <aside class="github acitivity">
+                    <div id="feed" class="feed">
+                        <script>
+                            GitHubActivity.ghfeed({ username: "Katelyn98", selector: "#feed" });
+                        </script>
+                    </div><!--//ghfeed-->
+                </aside>
                 
                 <aside class="credits aside section">
                     <div class="section-inner">
