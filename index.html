@@ -27,7 +27,8 @@
     <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
     
-    
+    <!--Boot Strap-->
+
     <!-- Global CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
     
@@ -49,18 +50,18 @@
 
 <body>
     <!-- ******HEADER****** --> 
-    <header class="header">
+    <header align = "center" class="header">
         <div align="center" class="container clearfix">                       
             <img align="center" class="profile-image img-fluid" src="assets/images/profile.png" alt="Katelyn Morrison" />
-            <!-- <a class="btn btn-cta-primary float-right" href="https://drive.google.com/file/d/1vo1RWfHQLDc0xIFCbrIQyxCkcPCdkUzc/view?usp=sharing" target="_blank"><i class="fas fa-file"></i> Resume/CV</a>               -->
         </div><!--//container-->
-        <div class="container clearfix">
-            <div class="profile-content ">
+        <div align="center" class="container clearfix">
+            <div align="center" class="profile-content ">
                 <h1 align="center" class="name">Katelyn Morrison</h1>
                 <h2 align="center" class="desc">Student, Researcher, Incoming Data Science Intern @ <span class="place"><a href="https://www.lab41.org/">Lab41</a></span></h2>   
                 <ul align="center" class="social list-inline">
-                    <li class="list-inline-item"><a href="https://github.com/katelyn98"><i class="fab fa-github-alt"></i></a></li>    
-                    <li class="list-inline-item last-item"><a href="assets/blog/index.html"><i class="fab fa-blogger"></i></a></li>                
+                    <li class="list-inline-item"><a href="https://github.com/katelyn98"><i class="fab fa-github-alt" style="color: aliceblue;"></i></a></li>    
+                    <li class="list-inline-item"><a href="assets/blog/index.html"><i class="fab fa-blogger" style="color: aliceblue;"></i></a></li> 
+                    <li class="list-inline-item last-item"><a href="assets/CV2020.pdf"><i class="fas fa-file-pdf" style="color: aliceblue;"></i></a></li>               
                 </ul> 
             </div><!--//profile-->
         </div>
@@ -68,42 +69,22 @@
     
     <div class="container sections-wrapper">
         <div class="row">
-            <div class="primary col-lg-8 col-12">
-                <section class="about section">
+            <div class="col-l-12 align-self-center">
+                <section class="latest section" style="margin-left: 10%; margin-right: 10%;">
                     <div class="section-inner">
-                        <h2 class="heading">About Me</h2>
-                        <div class="content">
-                            <p>A futuristic, enthusiastic student leader passionate about changing the world. Words that help describe my passions are sustainability, social impact, innovation, and computer science. I spend some of my time writing training documentation or facilitating workshops at a Makerspace I work at. During the Fall 2019 semester, I was selected with 10 other students at my university to participcate in the Millennium Fellowship in partnership with the United Nations Academic Impact Group. You can read more about my involvement with the <span class="place"><a href="https://www.millenniumfellows.org/2019/pitt/katelyn-morrison">Millennium Fellowship</a></span> here. I also participated in another fellowship hosted by the d.School at Stanford during the Fall 2019 semetser with three other students. You can read more about my involvement with the <span class="place"><a href="http://universityinnovation.org/wiki/University_of_Pittsburgh_Student_Priorities#Fall_2019_Strategies">University Innovations Fellows Fellowship</a></span> here. In my free time I am either learning Spanish, creating something in the makerspace, riding my beautiful Shwinn Prelude roadbike, or enjoying nature. </p> 
-                        </div><!--//content-->
-                        <h3 class="heading">Research Interests</h3>  
-                        <div class="content">
-                            <p>My research interests are within the field of Computational Sustainability. If you never heard of this field before, check out <span class="place"><a href="http://www.compsust.net/">CompSustNet</a></span>. I am a co-chair for the CompSust DC 2020. I am interested in learning more about and researching convolutional neural nets and large scale spatio-temporal modeling/prediction along with its applications within Smart Cities, Smart Mobility, and Sustainable Development. Currently my research is centered around Smart Mobility and Smart Transporation, specifically Bike Sharing Systems. Read more about my current research project on my blog! Some other interesting topics that I have looked at in the past relate to the perception of security (specifically location services) within devleoping countries in South America. </p>
-                        </div> 
-                    </div><!--//section-inner-->              
-                </section><!--//section-->
-    
-               <section class="latest section">
-                    <div class="section-inner">
-                        <h2 class="heading">Research</h2>
+                        <h2 class="heading" style="text-align: center;">Recent Projects & Research</h2>
                         <div class="content">    
-                                               
+                                            
                             <div class="item featured text-center">
                                 <h3 class="title"><a href="https://github.com/katelyn98/MachineLearning-ComputerVision/wiki/Computer-Vision-~-Normalization-Process">Dual Live Angle Calculation to Determine Flexibility of Torso Using Computer Vision</a></h3>
                                 <p class="summary">Accurately calculating the flexibility of a patient undergoing physical therapy is a difficult task and results in inconsistent measurements. Flexibility and ability to do certain tasks are parameters used to determine the patient's progress in therapy and training. To achieve a consistent and accurate reading on ones’ flexibility, specifically for a patient's torso, computer vision techniques have been combined with hardware to create a user-friendly application and product for the patients and physical therapists to interact with. Below is one of my project partners Dan testing out the angle calculations.</p>
                                 <div class="featured-image has-ribbon">
                                     <a href="https://github.com/katelyn98/MachineLearning-ComputerVision/wiki/Computer-Vision-~-Normalization-Process" target="_blank">
-                                    <img class="img-fluid project-image" src="assets/images/rotation.gif" alt="MLB Rotation" />
+                                        <img class="img-fluid project-image" src="assets/images/rotation.gif" alt="MLB Rotation" />
                                     </a> 
-                                    <!-- <div class="ribbon">
-                                        <div class="text">OpenCV & Python</div>
-                                    </div> -->
                                 </div>                                  
-                                <!-- <div class="desc text-left">                                    
-                                    <p>You can promote your main project here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
-                                </div>//desc          --> 
-                                <!-- <a class="btn btn-cta-secondary" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/velocity-bootstrap-theme-for-startup-products/" target="_blank"><i class="fas fa-thumbs-up"></i> Back my project</a>                  -->
                             </div><!--//item-->
-                            <!-- <hr class="divider" /> -->
+                            <hr class="divider" />
 
                             <div class="item row">
                                 <a class="col-md-4 col-12" href="https://github.com/katelyn98/JamDrawHacakthon" target="_blank">
@@ -114,165 +95,25 @@
                                     <p class="mb-2">We created an application that takes your stories (drawings) and generates a song based off the percentage of a dominant color in your drawing using K-Means Clustering. To create this, we started off with rapid prototyping harnessing the design thinking skills. This lead us to come up with such a unique idea: JamDraw. I continued this as a class project to connect it to a RaspberryPi and PiCamera.</p>
                                 </div>
                             </div>
-
-                            <!-- <div class="item row">
-                                <a class="col-md-4 col-12" href="https://docs.google.com/presentation/d/1K15Yp2sYcVnnCnqVDHPKhea88mRy_ORaXKzXsxtv5TI/edit?usp=sharing" target="_blank">
-                                <img class="img-fluid project-image" src="assets/images/projects/RecyclingProj.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://docs.google.com/presentation/d/1K15Yp2sYcVnnCnqVDHPKhea88mRy_ORaXKzXsxtv5TI/edit?usp=sharing" target="_blank">Impact of Signage on First Year Residence Hall Recycling</a></h3>
-                                    <p class="mb-2">Project executed during my freshmen year at Moravian College under the supervision of Dr. Shari Dunham. After moving into the freshmen dorms, I quickly noticed the lack of recycling in my dorm. Many students did not recycle in their dorm rooms nor did they use the recycling bin in the bathroom properly. After asking around, I understood that some people did not know how to recycle and others did not even know the bin in the bathroom was for recycling. I set out to analyze this cultre on campus around recycling and to see what techniques could be done to encourage students to change. </p> -->
-                                    <!-- <p><a class="more-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/instance-bootstrap-portfolio-theme-for-developers/" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p> -->
-                                <!-- </div>//desc                           -->
-                            <!-- </div>//item -->
-                            
-                            
-                             <!-- <div class="item row">
-                                <a class="col-md-4 col-12" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/startupkit-bootstrap-theme-for-saas-startups/" target="_blank">
-                                <img class="img-fluid project-image" src="assets/images/projects/project-3.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/startupkit-bootstrap-theme-for-saas-startups/" target="_blank">Startup Kit - Bootstrap 4 Theme for SaaS Startups</a></h3>
-                                    <p class="mb-2">You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.</p>
-                                    <p><a class="more-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/startupkit-bootstrap-theme-for-saas-startups/" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
-                                </div>//desc                           -->
-                            <!-- </div>//item -->
-                            
-                            <!-- <div class="item row">
-                                <a class="col-md-4 col-12" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/" target="_blank">
-                                <img class="img-fluid project-image" src="assets/images/projects/project-4.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/" target="_blank">Nova Pro - Bootstrap 4 Theme for Mobile Startups</a></h3>
-                                    <p class="mb-2">You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus.</p>
-                                    <p><a class="more-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
-                                </div>//desc                           -->
-                            <!-- </div>//item                             -->
-                            <!-- <div class="item row">
-                                <a class="col-md-4 col-12" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/delta-bootstrap-theme-for-mobile-apps/" target="_blank">
-                                <img class="img-fluid project-image" src="assets/images/projects/project-5.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/delta-bootstrap-theme-for-mobile-apps/" target="_blank">Delta - Bootstrap 4 Theme for Promoting Mobile Apps</a></h3>
-                                    <p class="mb-2"> You can put one of your secondary projects here. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</p>
-                                    <p><a class="more-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/delta-bootstrap-theme-for-mobile-apps/" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
-                                </div>//desc                           -->
-                            <!-- </div>//item
-                            
-                        </div>//content-->  
-                    </div><!--//section-inner-->                
+                        </div> 
+                    </div>            
                 </section><!--//section-->
-                
-                <section class="projects section">
-                    <div class="section-inner">
-                        <h2 class="heading">Projects</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title"><a href="https://github.com/katelyn98/SmartCitiesFinal" target="_blank">HealthyRide Bikes Google Maps Chrome Extension</a></h3>
-                                <p class="mb-2">As a final project for CS 1699: Future of Cities, I will be creating a chrome extension that uses the HealthyRide Bike API. This extension will show the closest HealthyRide Bike station with available bikes on Google Maps in Chrome. Still in very beginning stages. </p>
-                            </div>
-                            <div class="item">
-                                <h3 class="title"><a href="assets/images/projects/Pilot Study Presentation.pdf" target="_blank">Impact of Signage on First Year Residence Hall Recycling</a></h3>
-                                    <p class="mb-2">Project executed during my freshmen year at Moravian College under the supervision of Dr. Shari Dunham. After moving into the freshmen dorms, I quickly noticed the lack of recycling in my dorm. Many students did not recycle in their dorm rooms nor did they use the recycling bin in the bathroom properly. After asking around, I understood that some people did not know how to recycle and others did not even know the bin in the bathroom was for recycling. I set out to analyze this cultre on campus around recycling and to see what techniques could be done to encourage students to change. </p>
-                            </div>
-                            
-                             <!-- <a class="btn btn-cta-secondary" href="#">More on CoderWall <i class="fas fa-chevron-right"></i></a> -->
-                            
-                        </div><!--//content   -->
-                    </div><!-- //section-inner          -->       
-                </section> <!-- //section
-                
-                <!-- <section class="experience section">
-                    <div class="section-inner">
-                        <h2 class="heading">Experience</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title">Student Research/Programmer - <span class="place"><a href="https://www.engineering.pitt.edu/">Swanson School of Engineering</a></span> <span class="year">(Aug 2019 - Present)</span></h3>
-                                <p>Working on a team of students a part of the XProjects Program through the Swanson School of Engineering to create a hardware/software product using OpenCV with a Raspberry Pi camera.</p>
-                            </div><!--//item-->
-                            <!-- <div class="item">
-                                <h3 class="title">Makerspace Technician - <span class="place"><a href="https://teaching.pitt.edu/open-lab/">OpenLab ~ University Center for Teaching & Learning</a></span> <span class="year">(Aug 2018 - present)</span></h3>
-                                <p>Engage students, faculty, and staff in activities that promote creativity inside and outside of the classroom through state of the art technologies such as 3D Printers, VR, Vinyl Cutters, 360° Videos, and more!</p>
-                            </div>//item -->
-                            <!-- <div class="item">
-                                <h3 class="title">Software Developer Intern - <span class="place">PPG Industries.</a></span> <span class="year">(May 2019 - Aug 2019)</span></h3>
-                                <p>Researched and developed ServiceNow Virtual Agent Chatbot using drag and drop logic and JavaScript customization. Created workflows and forms using JavaScript and AngularJS. Learned about the business analyst position, project lifecycle, and how to gather requirements from stakeholders.</p>
-                            </div>//item -->
-                            
-                        <!-- </div>//content   -->
-                    <!-- </div>//section-inner                  -->
-                <!-- </section>//section -->
-                <section class="github section">
-                    <div class="section-inner">
-                        <h2 class="heading">My GitHub</h2>
-                        <!-- <p>You can embed your GitHub contribution graph calendar using IonicaBizau's <a href="https://github.com/IonicaBizau/github-calendar" target="_blank">GitHub Calendar</a> widget.  -->
-                        
-                        <div id="github-graph" class="github-graph">
-                            <div class="calendar"> </div>
-                            <script>
-                                GitHubCalendar(".calendar", "katelyn98", {responsive: true});
-                            </script>
-                        </div><!--//github-graph-->
-                        
-                    </div><!--//secton-inner-->
-                </section><!--//section-->
-                <section class="github activity">
-                        <!--//Usage: https://caseyscarborough.com/projects/github-activity/ -->                       
-                        <div id="feed">
-                            <script>
-                                GitHubActivity.feed({ username: "katelyn98", selector: "#feed", limit: 20 });
-                            </script>
-                        </div>
-                </section>
-            </div><!--//primary-->
-            <div class="secondary col-lg-4 col-12">
-                
-                <aside class="education aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Education</h2>
-                        <div class="content">
-                            <div class="item">                      
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> BS Computer Science ~ Certificate in Sustainability</h3>
-                                <h4 class="university">University of Pittsburgh <span class="year">(2018-2021)</span></h4>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> General Studies</h3>
-                                <h4 class="university">Moravian College <span class="year">(2017-2018)</span></h4>
-                            </div><!--//item-->
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                            
-                <aside class="languages aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Languages</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li class="item">
-                                    <span class="title"><strong>English:</strong></span>
-                                    <span class="level">Native Speaker <br class="visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
-                                </li><!--//item-->
-                                <li class="item">
-                                    <span class="title"><strong>Spanish:</strong></span>
-                                    <span class="level"> Conversationally Fluent ~ Strong vocabulary in technology & sustainability <br class="visible-sm visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half"></i></span>
-                                </li><!--//item-->
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
+            </div>
+        </div>
+    
+            
                 
                 <!-- <aside class="blog aside section">
                     <div class="section-inner">
                         <h2 class="heading">Latest Blog Posts</h2>
                         <p>You can use Sascha Depold's <a href="https://github.com/sdepold/jquery-rss" target="_blank">jQuery RSS plugin</a> to pull in your blog post feeds.</p>
-                        <div id="rss-feeds" class="content"> -->
-
-                        <!-- </div>//content -->
-                    <!-- </div>//section-inner -->
-                <!-- </aside>//section -->
+                        <div id="rss-feeds" class="content">
+                        </div>
+                    </div>
+                </aside> -->
                 
                 <aside class="list conferences aside section">
-                    <div class="section-inner">
+                    <div class="section-inner" style="margin-left: 10%; margin-right: 10%;">
                         <h2 class="heading">Conferences/Events</h2>
                         <div class="content">
                             <ul class="list-unstyled">
@@ -287,16 +128,6 @@
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </aside><!--//section--> 
-                
-                <aside class="credits aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Contact Me</h2>
-                        <div class="content">
-                            <p>Email: katelyncmorrison98@gmail.com</p>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-              
             </div><!--//secondary-->    
         </div><!--//row-->
     </div><!--//masonry-->
@@ -305,7 +136,9 @@
     <footer class="footer">
         <div class="container text-center">
                 <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out our commercial license options via our website: themes.3rdwavemedia.com */-->
-                <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+                <small> <i class="fas fa-seedling" style="color: aliceblue;"></i> Create the things you wish existed <i class="fas fa-seedling" style="color: aliceblue;"></i> </small>
+                <br>
+                <small class="copyright">Designed with <i class="fas fa-heart" style="color: aliceblue;"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
         </div><!--//container-->
     </footer><!--//footer-->
  
