@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-161549474-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-161549474-1');
+	</script>
+    <title>Katelyn's Stories</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+	<div id="colorlib-page">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="js-fullheight">
+			<nav id="colorlib-main-menu" role="navigation">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li class="colorlib-active"><a href="research.html">Research</a></li>
+					<li><a href="travel.html">Travel</a></li>
+					<li><a href="about.html">About Me</a></li>	
+				</ul>
+			</nav>
+
+			<div class="colorlib-footer">
+					<h1 id="colorlib-logo" class="mb-3"><a href="index.html" style="background-image: url(images/backgroundName.jpg);">Kate's Blog</a></h1>
+				
+				<p class="pfooter"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+    </div>
+    </aside> <!-- END COLORLIB-ASIDE -->
+    <div id="colorlib-main">
+        <section class="ftco-section ftco-no-pt ftco-no-pb">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-xl-12 py-5 px-md-5">
+                    <div class="row pt-md-4" style="margin-left: 5%; margin-right:5%;">
+                        <h1 class="mb-3">Mapping Bike Sharing Station Locations and City Housing Conditions</h1>
+                        <p>Having a reliable mode of transportation is necessary for people to maintain jobs. Sustainable and accessible mobility is imperative to the economic growth of a city. After spending a majority of my spring semester research about the public bike sharing system in Manizales, Colombia, I figured it would be
+                            worthy to be familiar with the bike sharing program in Pittsburgh. 
+                        </p>
+                        <h2 class="mb-3 mt-5">HealthyRide Bike Sharing Program</h2>
+                        <p>The HealthyRide Bike Sharing Program joined Pittsburgh in 2015. From analyzing the data on WPRDC as of quarter 1 in 2020, there are currently 88 stations and 1085 total racks available from all the stations combined [1]. At the time I went through the data, it is unclear if there are actually 1085 bikes. There are quite a few articles about on Google from searching "HealthyRide Pittsburgh and low income neighborhoods", but these articles mainly date from 2018. Many of the articles identify that HealthyRide is planning on adding up to 175 stations...but it is two years later from the date of these articles with HealthyRide
+                            only reporting 88 stations to the WPRDC [2, 3]. I have plotted the bike station locations below (represented as blue dots) from the coordinates provided in this <span class="place"><a href="https://data.wprdc.org/dataset/healthyride-stations"> dataset</a></span>.  </p>
+                            
+                            <p>
+                            <img src="images/result1.png" alt="" class="img-fluid" width="80%" height="90%">
+                            </p>
+
+                        <p> Also these articles have no data source to back up their claims. Be careful when reading any article with claims and no explicit source or data to back it up. 
+                            Anyways, as with any other docked bike sharing program in any other city, the location to place a bike station or "rental hub" 
+                            remains difficult. Researchers have applied machine learning algorithms to optimize the distance between any two given bike stations or to optimize the accessibility of the bike stations between lower income neighborhoods and higher income neighborhoods. Furthermore, a lot of research has been done on the bike sharing system in 
+                            Manizales, Colombia to identify optimial station locations and optimal accessibility amongst the socioeconomic groups (references to research papers at the end of this post). 
+                        </p>
+                        <p>[1] <span class="place"><a href="https://data.wprdc.org/organization/healthy-ride">WPRDC HealthyRide Data</a></span> </p>
+
+                        <p>[2] <span class="place"><a href="https://www.marketplace.org/2018/06/07/pittsburgh-bike-share-program-missed/">Pittsburgh Bike Share Program Missed</a></span> </p>
+
+                        <p>[3] <span class="place"><a href=" https://www.pghcitypaper.com/pittsburgh/pittsburgh-bike-share-is-expanding-and-hoping-to-get-more-minority-and-low-income-riders-on-bikes/Content?oid=7261548 ">Pittsburgh Bike Share is Expanding and Hoping to get More Minority and Low Income Riders on Bikes</a></span> 
+                        </p>
+
+                        <h2 class="mb-3 mt-5">HealthyRide Station Location Analysis</h2>
+                        <p>Since accessibility was such a researched area for the bike sharing system in Manizales, Colombia, I decided to find a dataset that could represent the different socioeconomic status levels of each neighborhood in Pittsburgh. This <span class="place"><a href="https://data.wprdc.org/dataset/allegheny-county-poor-condition-residential-parcel-rates">dataset</a></span> is from the Allegheny County and is publicly available on WPRDC. 
+                        
+                        </p>
+                        <p>
+                        <img src="images/result.png" alt="" class="img-fluid">
+                        </p>
+                       
+                        <div class="tag-widget post-tag-container mb-5 mt-5">
+                            <div class="tagcloud">
+                                <a href="research.html" class="tag-cloud-link">Research</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+    </div><!-- END COLORLIB-MAIN -->
+    </div><!-- END COLORLIB-PAGE -->
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
