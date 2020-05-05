@@ -65,22 +65,22 @@
                 <div class="col-xl-12 py-5 px-md-5">
                     <div class="row pt-md-4" style="margin-left: 5%; margin-right:5%;">
                         <h1 class="mb-3">Mapping Bike Sharing Stations and Neighborhood Housing Conditions</h1>
-                        <p>Having a reliable mode of transportation is necessary for people to maintain jobs. Sustainable and accessible mobility is imperative to the economic growth of a city. In many cities, bike sharing programs are becoming a sustainable and accessible option. 
-                            But it is necessary to investigate the sustainability and accessibility of the city's bike sharing program. After spending a majority of my spring semester researching the public bike sharing system in Manizales, Colombia, I figured it would be
-                            worthwhile to become familiar with the bike sharing program in Pittsburgh. My research question is defined as the following: Do any HealtyhRide bike stations exist in neighborhoods that have a higher percentage of poor housing conditions and if they do, then
+                        <p>Having a reliable mode of transportation is necessary for people to maintain jobs. Sustainable and accessible mobility is imperative to the economic growth of a city. In many cities, bike sharing programs are becoming an increasingly sustainable and accessible option for commuters. 
+                            By collecting and analyzing data about these programs, we can learn about how to make them even more useful. After spending a majority of my spring semester researching the public bike sharing system in Manizales, Colombia, I figured it would be
+                            worthwhile to become familiar with the bike sharing program in Pittsburgh. My research question is the following: Do any HealtyhRide bike stations exist in neighborhoods that have a higher percentage of poor housing conditions and if they do, then
                             what proportion of HealthyRide bike stations exist in neighborhoods with a higher percentage of poor housing conditions? All the code and the corresponding Jupyter Notebook can be found on my <span class="place"><a href="https://github.com/katelyn98/HealthyRide-Mapping"> GitHub</a></span>. 
                         </p>
         
                         <img src="images/pittsburgh.jpeg" alt="" class="img-fluid">
 
                         <h2 class="mb-3 mt-5">HealthyRide Bike Sharing Program</h2>
-                        <p>The HealthyRide Bike Sharing Program came to Pittsburgh in May 2015 and have been increasing the number of bike stations throughout Pittsburgh ever since.
+                        <p>The HealthyRide Bike Sharing Program came to Pittsburgh in May 2015 and has been increasing the number of bike stations throughout Pittsburgh ever since.
                             There are quite a few articles about the location of these bike stations in relation to the income of neighborhoods. Some articles (from city news sites or blogs) mention that there are not enough stations in the lower income neighborhoods in 
-                            Pittsburgh, but these articles also date from 2018. These articles from 2018 also identify that 
-                            HealthyRide is planning on adding up to 175 stations and that HealthyRide is working on adding more stations in lower income neighborhoods [<span class="place"><a href="https://www.marketplace.org/2018/06/07/pittsburgh-bike-share-program-missed/">2</a></span>, 
-                            <span class="place"><a href=" https://www.pghcitypaper.com/pittsburgh/pittsburgh-bike-share-is-expanding-and-hoping-to-get-more-minority-and-low-income-riders-on-bikes/Content?oid=7261548 ">3</a></span>]. However, these articles have no dataset to back up their claims explicity. 
-                            To address the claims in these articles [<span class="place"><a href="https://www.marketplace.org/2018/06/07/pittsburgh-bike-share-program-missed/">2</a></span>, <span class="place"><a href=" https://www.pghcitypaper.com/pittsburgh/pittsburgh-bike-share-is-expanding-and-hoping-to-get-more-minority-and-low-income-riders-on-bikes/Content?oid=7261548 ">3</a></span>], 
-                            I have done some data analysis to see if HealthyRide stations are located in lower income neighborhoods and the station's bike capacity.  
+                            Pittsburgh, but these articles also date from 2018. These articles also identify that 
+                            HealthyRide is planning on adding up to 175 stations including more stations in lower-income neighborhoods [<span class="place"><a href="https://www.marketplace.org/2018/06/07/pittsburgh-bike-share-program-missed/">2</a></span>, 
+                            <span class="place"><a href=" https://www.pghcitypaper.com/pittsburgh/pittsburgh-bike-share-is-expanding-and-hoping-to-get-more-minority-and-low-income-riders-on-bikes/Content?oid=7261548 ">3</a></span>].  
+                            To address the claims in these articles, 
+                            I have analyzed some data to see the relationship between the capacity of HealthyRide bike stations and the income level of neighborhoods by using the percentage of poor housing conditions as an approximation for income.  
                             From analyzing the data from the Western Pennsylvania Regional Data Center (WPRDC), there are currently 100 stations and 1085 total bike racks available from all the stations combined as of Q1 2020 [<span class="place"><a href="https://data.wprdc.org/organization/healthy-ride">1</a></span>]. 
                             I have plotted the bike station locations below (represented as purple dots) from the coordinates provided in this <span class="place"><a href="https://data.wprdc.org/dataset/healthyride-stations"> dataset</a></span> using the base map as the<span class="place"><a href="http://pghgis-pittsburghpa.opendata.arcgis.com/datasets/e1894e5ab8ea4889923efd810b13f760_0"> Census Tracts</a></span> from 2010 for Allegheny County.</p>
                             
@@ -90,48 +90,50 @@
 
                         <p> 
                             
-                            Bike sharing programs come with a lot of infrastructure, especially if the bikes need to be returned to a station by the end of a ride (not "dockless" program). Most bike sharing programs also require the user to download a smart phone application to register and rent the bike.
-                            As with any other bike sharing program that is not "dockless", the location to place a bike station or "rental hub" remains difficult. Researchers have applied machine learning algorithms to optimize the distance between any two given bike stations or to optimize the accessibility of the 
-                            bike stations between lower income neighborhoods and higher income neighborhoods.  
+                            Bike sharing programs come with a lot of infrastructure, especially if the bikes need to be returned to a station by the end of a ride (not a "dockless" program). A "dockless" bike sharing program is one where the user does not need to start and stop their ride at a "rental hub". Most bike sharing programs also require the user to download a smart phone application to register and rent the bike.
+                            As with any other bike sharing program that is not "dockless", the location to place a bike station or "rental hub" remains difficult. Researchers have applied optimization algorithms to minimize the distance between any two given bike stations, or to maximize the accessibility of bike stations between lower income
+                            and higher income neighborhoods [4, 5].  
                         </p>
 
                         <h2 class="mb-3 mt-5">Other Bike Sharing Programs: Manizales & St. Louis</h2>
                         <p>
-                                A lot of research has been done on the bike sharing system in Manizales (Manizales En Bici) to identify optimal station locations and optimal accessibility amongst the socioeconomic groups. This program is a public bike sharing programs
-                                that is free for the users after they register for the system. It is important to note that Manizales has a larger population than Pittsburgh, PA by about 100,000 people and they only have 8 rental stations. Neighborhoods in Manizales are strictly broken up by
-                                strata (or your socioeconomic status) and these distinctions are very clear amongst the community. However, published research identifies that the stations are more easily accessible by users of a higher socioeconomic status [4, 5, 6, 7]. St. Louis, Missouri is a 
-                                city that has a very similar population size to that of Pittsburgh right around 300,000 people. The bike sharing program in St. Louis is very different from the one in Pittsburgh; St. Louis works with Lime to offer "dockless" bikes which means the user can start and end their
-                                bike ride where ever they choose instead of returning to a "rental hub". According to Lime's yearly report in 2018, they have deployed 20% of their bikes to undeserved neighborhoods<span class="place"><a href="https://www.limebike.com/hubfs/Lime_Official_One_Year_Report.pdf"> [8]</a></span>. 
-                                Given the model of bike sharing programs normally running through a smart phone app, a certain percentage of the lower income population may be unable to participate in this mode of transportation. This is an important accesibility issue within some bike sharing programs, but St. Louis 
-                                worked with Lime and a third party company to create non-smart phone and non-credit card rental options <span class="place"><a href="https://www.riverfronttimes.com/newsblog/2018/05/31/lime-offering-discounted-bike-rides-for-low-income-cyclists"> [9]</a></span>. 
+                                A lot of research has been done on the bike sharing system in Manizales (Manizales En Bici) to identify optimal station locations and optimal accessibility among the socioeconomic groups. This program is open to the public
+                                that is free for the users after they register for the system. It is important to note that Manizales has a larger population than Pittsburgh, PA by about 100,000 people and they only have 8 rental stations. Neighborhoods in Manizales are stratified by socioeconomic status  
+                                and these distinctions are very clear among the community. However, previous work identifies that the stations are more easily accessible by users of a higher socioeconomic status [4, 5, 6, 7]. St. Louis, Missouri is a 
+                                city that has a very similar population size to that of Pittsburgh, right around 300,000 people. The bike sharing program in St. Louis is very different from the one in Pittsburgh; St. Louis works with Lime to offer "dockless" bikes. 
+                                According to Lime's yearly report in 2018, they have deployed 20% of their bikes to lower income neighborhoods<span class="place"><a href="https://www.limebike.com/hubfs/Lime_Official_One_Year_Report.pdf"> [8]</a></span>. 
+                                Given that bike sharing programs normally run through a smart phone app, a certain percentage of the lower income population may be unable to participate in this mode of transportation. This is an important accesibility issue within some bike sharing programs, but St. Louis 
+                                worked with Lime and a third party company to create non-smart phone and non-credit card rental options <span class="place"><a href="https://www.riverfronttimes.com/newsblog/2018/05/31/lime-offering-discounted-bike-rides-for-low-income-cyclists"> [9]</a></span>. This is an aspect that 
+                                is not currently available in Pittsburgh. 
                         </p>
                         <h2 class="mb-3 mt-5">HealthyRide Station Location Analysis</h2>
-                        <p>Since accessibility was a primary focus area for the bike sharing system in Manizales and St. Louis, I decided to find a dataset that could represent the different socioeconomic status levels of each neighborhood in Pittsburgh. 
+                        <p>Since accessibility across socioeconomic strata was a primary focus area for the bike sharing system in Manizales and St. Louis, I decided to find a dataset that could represent the different socioeconomic status levels of each neighborhood in Pittsburgh. 
                             This <span class="place"><a href="https://data.wprdc.org/dataset/allegheny-county-poor-condition-residential-parcel-rates">dataset</a></span> is from Allegheny County and is publicly available on the WPRDC website. 
                             The data on Poor Housing Conditions is from 2016 and, "...was produced by the Reinvestment Fund in their work with the Allegheny County Department of Economic Development" <span class="place"><a href="https://data.wprdc.org/dataset/allegheny-county-poor-condition-residential-parcel-rates">(WPRDC)</a></span>.
                             The Poor Housing Conditions dataset provides an, "...estimate of the percent of distressed housing units in each Census Tract" <span class="place"><a href="https://data.wprdc.org/dataset/allegheny-county-poor-condition-residential-parcel-rates">(WPRDC)</a></span>. 
-                            This dataset shows the proportions of parcels in poor condition with an average value of 0.02 in Allegheny Count, but I have narrowed down the dataset to only contain neighborhoods within Pittsburgh City Limits. 
+                            This dataset shows the proportions of parcels in poor condition with an average value of 0.02 in Allegheny County, but I have narrowed down the dataset to only contain neighborhoods within Pittsburgh City Limits. 
                         </p>
                         <p>
-                        <img src="images/result.png" alt="" class="img-fluid">
+                        <img src="images/resultChroma.png" alt="" class="img-fluid">
                         </p>
 
                         <p>
                             In the map above, I have plotted the location of the HealthyRide bike stations in purple. The shapes of the neighborhoods have now been assigned a color based on the Poor Housing Conditions scale. For those not familiar with Pittsburgh, there are three rivers which meet at a point right around (-80.005, 40.44).
-                            Pittsburgh also has very hilly terrain (a topographical feature that is also present in Manizales). From the map above, it is evident that there are two hot spots for the locations of the bike sharing stations. I have circled these two hot spots below in grey. The circled area on the left represents Downtown Pittsburgh and the 
-                            circled area on the right represents Central Oakland/North Oakland. Oakland is home to three universities and several large hospitals that are a part of UPMC network. 
+                            Pittsburgh also has very hilly terrain, a topographical feature that is also present in Manizales. From the map above, it is evident that there are two hot spots for the locations of the bike sharing stations. I have circled these two hot spots below in black. The circled area on the left represents Downtown Pittsburgh and the 
+                            circled area on the right represents Central Oakland/North Oakland. Oakland is home to three universities and several large hospitals that are a part of The UPMC network. 
                         </p>
 
 
-                        <p> Those neighborhoods in between Oakland and Downtown include The Hill District (specifically Middle Hill), Polish Hill, and West Oakland. You can see that in between these two locations, there are 3 HealthyRide bike stations. Only one of those stations are considered to be in a neighborhood with a high percentage of poor housing conditions.
+                        <p> Those neighborhoods in between Oakland and Downtown include The Hill District (specifically Middle Hill), Polish Hill, and West Oakland. You can see that in between these two locations, there are two HealthyRide bike stations. Only one of those stations are considered to be in a neighborhood with a high percentage of poor housing conditions.
                             It can also be seen that a lot of stations are in Central and North Oakland and border the neighborhood of West Oakland, but none are located in West Oakland. For Polish Hill, it is also evident that there are stations located along the border of this neighborhood.
                             
                         </p>
 
-                        <img src="images/narrowedResult.png" alt="" class="img-fluid">
+                        <img src="images/resultNarrowed.png" alt="" class="img-fluid">
 
                         <p>
-                            However, there are a grouping of neighborhoods around (-79.90, 40.46) that are shown to have a high percentage of poor housing conditions, and yet they have 3 HealthyRide stations. The darker of those three neighborhoods is known as Homewood West. The two neighborhoods that are horizontal to Homewood West are Homewood South and Homewood North. 
+                            However, there are a grouping of neighborhoods around (-79.90, 40.46) that are shown to have a high percentage of poor housing conditions. The darker of those three neighborhoods is known as Homewood West. The two neighborhoods that are horizontal to Homewood West are Homewood South and Homewood North. Despite these neighborhoods having a high
+                            percentage of poor housing conditions, they still have three HealthyRide stations. This could be because there may be businesses located near these stations that individuals from other neighborhoods need to or want to access by bicycle. 
                         </p>
             
                         <h2 class="mb-3 mt-5">HealthyRide Station Capacity Analysis</h2>
@@ -148,9 +150,9 @@
 
                         <h2 class="mb-3 mt-5">Conclusions</h2>
                             There are more variables to analyze with respect to the bike station locations and the neighborhoods that they are located in. It could also be investigated
-                            if there are a lack of stations in certain neighborhoods due to the lack of demand and those neighborhoods just happen to also have a high percentage of poor housing conditions. Spatial-temporal analysis can be done to determine how recently the stations were added in certain neighborhoods or when. 
+                            if there are a lack of stations in certain neighborhoods due to the lack of demand and those neighborhoods just happen to also have a high percentage of poor housing conditions. Spatial-temporal analysis could be done to determine how recently the stations were added in certain neighborhoods. 
                             Overall, it is clear that the HealthyRide stations are aggregated in certain neighborhoods and there are very few stations in neighborhoods that are considered to have a high percentage of poor housing conditions. However, they do have stations in neighborhoods that have a high percentage of poor housing conditions. 
-                            Possibly a survey should be created to reach out to the community (including the lower income neighborhoods) to see their most preferable mode of transportation and if they were to switch their mode of transportation to HealthyRide bikes if a station were near their departure and destination locations.  
+                            Possibly a survey should be created to reach out to the community (including the lower income neighborhoods) to see their most preferable mode of transportation and if they would switch their mode of transportation to HealthyRide bikes if a station were near their departure and destination locations.  
                         <p>
 
                         </p>
