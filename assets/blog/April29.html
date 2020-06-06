@@ -86,17 +86,13 @@
                             From analyzing the data from the Western Pennsylvania Regional Data Center (WPRDC), there are currently 100 stations and 1085 total bike racks available from all the stations combined as of Q1 2020 [<span class="place"><a href="https://data.wprdc.org/organization/healthy-ride">1</a></span>]. 
                             I have plotted the bike station locations below (represented as purple dots) from the coordinates provided in this <span class="place"><a href="https://data.wprdc.org/dataset/healthyride-stations"> dataset</a></span> using the base map as the<span class="place"><a href="http://pghgis-pittsburghpa.opendata.arcgis.com/datasets/e1894e5ab8ea4889923efd810b13f760_0"> Census Tracts</a></span> from 2010 for Allegheny County.</p>
                             
-                            <h2 class="mb-3 mt-5">Map using GeoPandas & Python</h2>
+                    
 
                             <p>
                             <img src="images/result1.png" alt="" class="img-fluid">
                             </p>
 
-                            <h2 class="mb-3 mt-5">Map using ArcGIS Software</h2>
-
-                            <p>
-                                <img src="images/bikesHealthyRidenoGrid.jpg" alt="" class="img-fluid">
-                            </p>
+                        
 
                         <p> 
                             
@@ -123,9 +119,16 @@
                             The Poor Housing Conditions dataset provides an, "...estimate of the percent of distressed housing units in each Census Tract" <span class="place"><a href="https://data.wprdc.org/dataset/allegheny-county-poor-condition-residential-parcel-rates">(WPRDC)</a></span>. 
                             This dataset shows the proportions of parcels in poor condition with an average value of 0.02 in Allegheny County, but I have narrowed down the dataset to only contain neighborhoods within Pittsburgh City Limits. 
                         </p>
+                        <h2 class="mb-3 mt-5">Map using GeoPandas in Python</h2>
                         <p>
                         <img src="images/resultChroma.png" alt="" class="img-fluid">
                         </p>
+
+                        <h2 class="mb-3 mt-5">Map using ArcGIS Software</h2>
+
+                            <p>
+                                <img src="images/bikesHealthyRidenoGrid.jpg" alt="" class="img-fluid">
+                            </p>
 
                         <p>
                             In the map above, I have plotted the location of the HealthyRide bike stations in purple. The shapes of the neighborhoods have now been assigned a color based on the Poor Housing Conditions scale. For those not familiar with Pittsburgh, there are three rivers which meet at a point right around (-80.005, 40.44).
