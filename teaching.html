@@ -45,7 +45,24 @@
     
     <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-    
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          text-align: center;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #5e5e5e;
+          text-align: center;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+    </style>
 </head> 
 
 <body>
@@ -90,7 +107,18 @@
                     <div class="section-inner">
                         <h2 class="heading" style="text-align: left;">Course</h2>
                         <div class="content">
-                            <p> COMING SOON! </p>
+                            <table style="width:100%">
+                                <tr>
+                                  <th>Course</th>
+                                  <th>Recitation Section</th> 
+                                  <th>Materials</th>
+                                </tr>
+                                <tr>
+                                  <td>CS 0011: Introduction to Computing for Scientists</td>
+                                  <td>Monday 11:05 AM - 12:55 PM</td> 
+                                  <td><span class="place"><a href="CS0011.html">Slides & Resources</a></span></td>
+                                </tr>
+                              </table>
                         </div><!--//content--> 
                     </div><!--//section-inner-->   
                     <div class="section-inner">
